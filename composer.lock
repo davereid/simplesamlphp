@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2dbb7723d98e24ccfce06a5b523949fd",
+    "content-hash": "275bf5ca273f811a52a1b490a7ee2b82",
     "packages": [
         {
             "name": "beste/clock",
@@ -1900,16 +1900,16 @@
         },
         {
             "name": "simplesamlphp/saml2",
-            "version": "v5.0.0-alpha.10",
+            "version": "v5.0.0-alpha.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/saml2.git",
-                "reference": "20c50b4e6d357c903530cec7ca02a50e1377a759"
+                "reference": "5d4a32725cdc550e347c7fa70d49bd4dd28d5571"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/20c50b4e6d357c903530cec7ca02a50e1377a759",
-                "reference": "20c50b4e6d357c903530cec7ca02a50e1377a759",
+                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/5d4a32725cdc550e347c7fa70d49bd4dd28d5571",
+                "reference": "5d4a32725cdc550e347c7fa70d49bd4dd28d5571",
                 "shasum": ""
             },
             "require": {
@@ -1960,9 +1960,9 @@
             "description": "SAML2 PHP library from SimpleSAMLphp",
             "support": {
                 "issues": "https://github.com/simplesamlphp/saml2/issues",
-                "source": "https://github.com/simplesamlphp/saml2/tree/v5.0.0-alpha.10"
+                "source": "https://github.com/simplesamlphp/saml2/tree/v5.0.0-alpha.11"
             },
-            "time": "2023-08-01T22:02:26+00:00"
+            "time": "2023-08-02T18:40:28+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp-assets-base",
@@ -2006,12 +2006,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp-module-adfs.git",
-                "reference": "b9270ac58c4aa86b72fbcb4a426a3446133f42d6"
+                "reference": "29bc02792b36b940e5a3c27db4bf41d2da9001d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-module-adfs/zipball/b9270ac58c4aa86b72fbcb4a426a3446133f42d6",
-                "reference": "b9270ac58c4aa86b72fbcb4a426a3446133f42d6",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-module-adfs/zipball/29bc02792b36b940e5a3c27db4bf41d2da9001d3",
+                "reference": "29bc02792b36b940e5a3c27db4bf41d2da9001d3",
                 "shasum": ""
             },
             "require": {
@@ -2054,7 +2054,7 @@
                 "issues": "https://github.com/simplesamlphp/simplesamlphp-module-adfs/issues",
                 "source": "https://github.com/simplesamlphp/simplesamlphp-module-adfs"
             },
-            "time": "2023-07-31T17:07:29+00:00"
+            "time": "2023-08-11T19:30:22+00:00"
         },
         {
             "name": "simplesamlphp/xml-common",
@@ -5176,6 +5176,65 @@
             "time": "2022-12-30T00:15:36+00:00"
         },
         {
+            "name": "gettext/php-scanner",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-gettext/PHP-Scanner.git",
+                "reference": "989a2cffa1d0f43d13b14c83a50429119b5eb8e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-gettext/PHP-Scanner/zipball/989a2cffa1d0f43d13b14c83a50429119b5eb8e4",
+                "reference": "989a2cffa1d0f43d13b14c83a50429119b5eb8e4",
+                "shasum": ""
+            },
+            "require": {
+                "gettext/gettext": "^5.5.0",
+                "nikic/php-parser": "^4.2",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "oscarotero/php-cs-fixer-config": "^1.0",
+                "phpunit/phpunit": "^8.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gettext\\Scanner\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP scanner for gettext",
+            "homepage": "https://github.com/php-gettext/PHP-Scanner",
+            "keywords": [
+                "gettext",
+                "i18n",
+                "php",
+                "scanner",
+                "translation"
+            ],
+            "support": {
+                "email": "oom@oscarotero.com",
+                "issues": "https://github.com/php-gettext/PHP-Scanner/issues",
+                "source": "https://github.com/php-gettext/PHP-Scanner/tree/v1.3.1"
+            },
+            "time": "2022-03-18T11:47:55+00:00"
+        },
+        {
             "name": "mikey179/vfsstream",
             "version": "v1.6.11",
             "source": {
@@ -6380,16 +6439,16 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "5.0.5",
+            "version": "5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "0ca8db5a5fc9c8646244e629625ac486fa286bf2"
+                "reference": "bde739e7565280bda77be70044ac1047bc007e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/0ca8db5a5fc9c8646244e629625ac486fa286bf2",
-                "reference": "0ca8db5a5fc9c8646244e629625ac486fa286bf2",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/bde739e7565280bda77be70044ac1047bc007e34",
+                "reference": "bde739e7565280bda77be70044ac1047bc007e34",
                 "shasum": ""
             },
             "require": {
@@ -6432,7 +6491,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.5"
+                "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.6"
             },
             "funding": [
                 {
@@ -6440,7 +6499,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-14T08:28:10+00:00"
+            "time": "2023-08-02T09:26:13+00:00"
         },
         {
             "name": "sebastian/lines-of-code",
@@ -6963,6 +7022,9 @@
         "ext-xml": "*",
         "ext-zlib": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {
+        "ext-curl": "*",
+        "ext-pdo_sqlite": "*"
+    },
     "plugin-api-version": "2.3.0"
 }
