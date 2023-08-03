@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Test\SimpleSAML\Auth;
 
 use PHPUnit\Framework\TestCase;
@@ -41,7 +43,7 @@ class ProcessingChainRuleInserterTest extends TestCase
         $authProcsConfigs = [
             [
                 'class' => 'core:AttributeAdd',
-                'source' => array('myidp'),
+                'source' => ['myidp'],
             ],
         ];
         $state = [
