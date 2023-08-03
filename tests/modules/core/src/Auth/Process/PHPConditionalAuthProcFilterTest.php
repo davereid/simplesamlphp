@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Test\SimpleSAML\Auth\Process;
 
 use PHPUnit\Framework\TestCase;
@@ -26,7 +28,7 @@ class PhpConditionalAuthProcFilterTest extends TestCase
             'authproc' => [
                 [
                     'class' => 'core:AttributeAdd',
-                    'source' => array('myidp'),
+                    'source' => ['myidp'],
                 ],
             ]
         ];
