@@ -10,7 +10,7 @@ use SimpleSAML\Auth\ConditionalProcessingFilterInserter;
 /**
  * Conditionally create new authproc filters at the location of this filter
  */
-class PhpConditionalAuthProcFilter extends ConditionalProcessingFilterInserter
+class PHPConditionalAuthProcFilter extends ConditionalProcessingFilterInserter
 {
     private string $condition;
 
