@@ -38,6 +38,13 @@ abstract class ProcessingFilter
      */
     public int $priority = 50;
 
+    /**
+     * The condition to run this filter.
+     *
+     * Used to control whether or not to run this filter.
+     */
+    public string $condition = 'return true;';
+
 
     /**
      * Constructor for a processing filter.
@@ -54,6 +61,30 @@ abstract class ProcessingFilter
             $this->priority = $config['%priority'];
             unset($config['%priority']);
         }
+
+        if (array_key_exists('%condition', $config)) {
+            $this->condition = $config['%condition'];
+            unset($config['%condition']);
+        }
+    }
+
+
+    /**
+     * Test whether or not this filter must run.
+     *
+     * @param array &$state  The request we are currently processing.
+     * @return bool
+     */
+    public function checkCondition(array &$state): bool
+    {
+        $function = /** @return bool */ function (
+            array &$attributes,
+            array &$state
+        ) {
+            return eval($this->condition);
+        };
+
+        return $function($state['Attributes'], $state) === true;
     }
 
 
